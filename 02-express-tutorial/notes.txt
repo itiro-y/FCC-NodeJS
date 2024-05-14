@@ -1,0 +1,13 @@
+Express Tutorial
+    - HTTP Response Status Codes source
+        - https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+
+    - MIME types source
+        - https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types
+
+
+Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile apps
+
+Installing
+    - npm install express --save
+

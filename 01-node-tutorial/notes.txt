@@ -42,6 +42,57 @@ NPM
     
 ;;
 
+Event loop
+    - allows nodejs to perform non-blocking IO operations, by offloading operations to the system kernel whenever possible (modern kernels are multi-threaded)
+    - setTimeout(()=>{}, timeInterval)
+        - even if timeInterval = 0, it still runs the next task first
+    
+    - User requests -> event loop register the callback -> only when the app is complete it executes the callback
+
+Async patterns
+    - Promises
+    - async() and await 
+
+Event emitter
+    - Event-Driven Programming
+    - Used Heavily in Node.js
+
+Streams
+    - Writeable
+    - Readable
+    - Duplex 
+    - Transform 
+    - Extends EventEmitter class
+    - Useful when reading large Filesystem
+
+ HTTP Messages
+         -> Request ->
+    User      DATA      Node/Express
+         <- Response <-
+
+Request Message (User)
+    GET(method) /contact(url) HTTP/1.1
+    Headers
+    Body(optional)
+
+Resonse Message (Server)
+    HTTP/1.1 200(status code) OK(status text)
+    Headers
+    Body(optional)
+
+HTTP Methods
+    -   GET:    Read Data 
+    -   POST:   Insert Data
+    -   PUT:    Update Data
+    -   DELETE: Delete Data
+
+
+
+
+
+
+
+
 
 
 
