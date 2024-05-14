@@ -35,6 +35,14 @@ Built-in modules
     - FS 
     - HTTP 
 
+NPM
+    - npm install -> install every dependencies based on package.json
+        - usefull when deleting a module (nuke method -> delete node_module and package-lock.json)
+    - '-D' -> devDependencies, modules we only use when creating the app
+    
+;;
+
+
 
 
 
