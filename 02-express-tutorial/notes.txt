@@ -11,3 +11,22 @@ Express is a minimal and flexible Node.js web application framework that provide
 Installing
     - npm install express --save
 
+Useful methods
+    - app.get
+    - app.post
+    - app.put
+    - app.delete
+    - app.all
+    - app.use
+    - app.listen
+
+API VS SSR
+    - API - JSON
+    - SEND DATA
+    - RES.JSON()
+
+    - SSR - TEMPLATE
+    - SEND TEMPLATE
+    - RES.RENDER()
+
+    
