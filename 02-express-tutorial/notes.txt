@@ -29,4 +29,30 @@ API VS SSR
     - SEND TEMPLATE
     - RES.RENDER()
 
-    
+Middlewares
+    - req -> middleware -> res
+    - app.use
+        - order matters, use must be before every .get
+        - [n1, n2], it will be executed in order
+    - options - our own / express / third party
+        - morgan (logger)
+    - static assets
+        - app.use(express.static('./...))
+    - parse form data
+        - app.use(express.urlencoded({extended: false}))
+    - parse json data
+        - app.use(express.json())
+
+HTTP Methods
+    -   GET:    Read Data 
+    -   POST:   Insert Data
+    -   PUT:    Update Data
+    -   DELETE: Delete Data
+
+Routes
+    - separate the urls
+
+Controllers
+    - separate the urls' methods
+    - MVC architecture
+

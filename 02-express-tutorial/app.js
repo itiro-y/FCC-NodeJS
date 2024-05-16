@@ -1,27 +1,20 @@
 const express = require('express')
 const app = express()
-const {products} = require('./data')
+const people = require('./routes/people')
+const auth = require('./routes/auth')
 
-app.get('/', (req,res) => {
-    res.send('<h1> Home Page </h1><a href="/api/products">products</a>')
-})
+// static assets
+app.use(express.static('./methods-public'))
+// parse form data
+app.use(express.urlencoded({extended: false}))
+// parse json data
+app.use(express.json())
 
-app.get('/api/products', (req,res) => {
-    const newProducts = products.map((product)=>{
-        const {id, name, image} = product;
-        return {id, name, image}
-    })
-    res.json(newProducts)
-})
+app.use('/api/people', people)
 
-app.get('/api/products/1', (req,res) => {
-    const singleProduct = products.find((product)=>product.id === 1)
-    res.json(singleProduct)
-})
-
-
-
+app.use('/login', auth)
 
 app.listen(5000, () => {
-    console.log('sever is listening on port 5000...')
+    console.log('server is listening on port 5000...')
 })
+
