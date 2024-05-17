@@ -1,0 +1,21 @@
+The Model View Controller Pattern
+    - makes development more manageable
+    - allow for several developerers to simultaneously work on the app
+    - scalable, maintainable, and easy to expand
+
+
+Model: the backend that contains all the data logic
+    - simply manage the data 
+    - database, API, JSON obj
+
+View: the frontend or graphical user interface (GUI)
+    - decide what the user will see on their screen, and how
+    - ex. init(), render(), handleClick()
+
+Controller: the brains of the application that controls how data is displayed
+    - pull, modify and provide data to the user
+    - link between the view and model
+    - pulls data from the model and initializes the views, through getter and setter functions
+    - it modifies the data with a setter function, if there are any updates from the views
+
+
